@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adding Social Plugins to Your Web Application with Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Load Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Load the LinkedIn SDK -->
+    <script src="//platform.linkedin.com/in.js" type="text/javascript">
+      api_key: YOUR_API_KEY
+    </script>
+    <!-- Load the Facebook SDK -->
+    <script
+      async
+      defer
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=YOUR_APP_ID&autoLogAppEvents=1"
+      nonce="Z9JzoReU"
+    ></script>
+    <!-- Load the Instagram SDK -->
+    <script async src="//www.instagram.com/embed.js"></script>
+    <!-- Load the Pinterest SDK -->
+    <script
+      async
+      defer
+      data-pin-hover="true"
+      data-pin-tall="true"
+      data-pin-lang="en"
+      src="//assets.pinterest.com/js/pinit.js"
+    ></script>
+    <!-- Load the Quora SDK -->
+    <script async defer src="//www.quora.com/widgets/content"></script>
+    <!-- Load the Twitter SDK -->
+    <script
+      async
+      src="//platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+  </head>
+  
+  <body>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- LinkedIn Share Button -->
+          <script
+            type="IN/Share"
+            data-url="https://example.com"
+            data-counter="top"
+          ></script>
+        </div>
+        <div class="col-md-6">
+          <!-- Facebook Like Button -->
+          <div
+            class="fb-like"
+            data-href="https://example.com"
+            data-layout="button_count"
+            data-action="like"
+            data-size="small"
+            data-share="true"
+          ></div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-md-6">
+          <!-- Instagram Embed -->
+          <blockquote
+            class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/p/1234567890/"
+            data-instgrm-version="13"
+          >
+            <a
+              href="https://www.instagram.com/p/1234567890/"
+              target="_blank"
+            ></a>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <!-- Pinterest Pin It Button -->
+          <a
+            href="//www.pinterest.com/pin/create/button/?url=https://example.com&media=https://example.com/image.jpg&description=Example"
+            data-pin-do="buttonPin"
+            data-pin-config="beside"
+            ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png"
+          /></a>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-md-6">
+          <!-- Quora Embed -->
+          <blockquote
+            class="quora"
+            data-question-id="123456789"
+            data-width="100%"
+          >
+            <a
+              href="https://www.quora.com/What-are-some-tips-for-using-social-plugins-on-a-website"
+              target="_blank"
+              >What are some tips for using social plugins on a website?</a
+            >
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <!-- Twitter Tweet Button -->
+          <a
+            class="twitter-share-button"
+            href="https://twitter.com/intent/tweet?text=Example&url=https://example.com"
+            data-size="large"
+            data-lang="en"
+            >Tweet</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
